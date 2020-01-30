@@ -7,7 +7,7 @@
     "scripts": {
 		"docs-html": "documentation build index.js -f html -o docs --markdown-toc",
         "docs-md": "documentation build index.js -f md -o docs.md --markdown-toc",
-		"docs-readme": "documentation readme index.js --section=API --markdown-toc"
+		"docs-readme": "documentation readme index.js --section=Documentation --markdown-toc"
     },
     "author": "Ethan Sawyer",
     "license": "GPL-3.0-only",
