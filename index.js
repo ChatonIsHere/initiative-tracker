@@ -59,7 +59,7 @@ class Tracker {
      * @return {string} The amount of character in the tracker
      */
     get progress() {
-        return `${this.db.get("round").value() + 1}/${this.characterCount}`;
+        return `${this.db.get("turn").value() + 1}/${this.characterCount}`;
     }
 
     /**
