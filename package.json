@@ -1,0 +1,14 @@
+{
+    "name": "initiative-tracker",
+    "version": "1.0.1",
+    "description": "A lightweight combat tracker for tabletop games",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Ethan Sawyer",
+    "license": "GPL-3.0-only",
+    "dependencies": {
+        "lowdb": "^1.0.0"
+    }
+}
