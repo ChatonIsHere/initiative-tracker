@@ -5,7 +5,9 @@
     "main": "index.js",
     "repository": "https://github.com/ChatonIsHere/initiative-tracker",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+		"docs-html": "documentation build index.js -f html -o docs --markdown-toc",
+        "docs-md": "documentation build index.js -f md -o docs.md --markdown-toc",
+		"docs-readme": "documentation readme index.js --section=API --markdown-toc"
     },
     "author": "Chaton",
     "license": "GPL-3.0-only",
