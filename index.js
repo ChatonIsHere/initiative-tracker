@@ -8,11 +8,11 @@ class Tracker {
      * @param {number} turn       The character position whose turn it is
      * @param {number} round      The current round
      */
-    constructor() {
+    constructor(dataPath = "tracker.json") {
         const low = require('lowdb');
         const FileSync = require('lowdb/adapters/FileSync');
 
-        const adapter = new FileSync('tracker.json');
+        const adapter = new FileSync(dataPath);
         this.db = low(adapter);
 
         this.db.defaults({
