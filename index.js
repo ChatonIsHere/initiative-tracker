@@ -190,7 +190,13 @@ class Tracker {
 
     /** Sorts the current turn order by rolled initiative and then the dexterity score of the characters */
     sortTracker() {
-        this.db.update('characters', character => this.db.get("characters").orderBy(this.db.get("characters").value(), ['initiative', 'dexterity'], ['desc', 'desc']).value()).write();
+        let characterArray = this.db.get("characters").value();
+
+        characterArray.sort(function(a, b) {
+            return b.initiative - a.initiative || b.dexterity - a.dexterity;
+        });
+
+        this.db.update('characters', characters => characterArray).write();
     }
 
     /** Resets the tracker */
